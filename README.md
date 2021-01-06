@@ -2,25 +2,31 @@
 
 *Updating this repo is in progress*
 
-This repository is for collecting "C" programs (COSMIC) that can be used to program the STM8S103F3P6 development board as seen in the picture below (via the STVD IDE)   
+<img src="images/STM8SF3P6_board.jpg" alt="Dev board"/>
+
+This repository is for collecting "C" programs (COSMIC) that can be used to program the STM8S103F3P6 development board as seen in the picture above.   
 The STM8S103F3P6 is a 20 pin PIC microcontroller development board with 16 GPIO pins. It is cheap, quite powerful and easily available. 
+It is programmed with free software that you can download and install on your win10 PC. 
+N.B. You connect the development board to your PC via a cheap "ST Link V2" programming dongle  
 
 Please note:
  - The following "C" programs are stored in folder "CODE" of this repository  
    - STM8S_blink.c  
    - STM8S_uart.c
    - STM8S_adc.c 	 	 
- - When you buy this board, you only get the blue coloured development board as seen in the picture below. Be aware that the header pins are not provided. You will need to buy some header pins and solder them yourself.
+ - When you buy this board, you only get the blue coloured development board as seen in the picture above without the header pins. You will need to buy some header pins and solder them yourself before you can use the board.
  - To program the STM8S103, you also need a "ST-Link V2" USB device which connects to the boards 4 upright pins via a 4 wire dupont harness. (See below for more information about this) 
  - There are 2 ways to supply regulated 5V to this dev board. 
    - Via the supplied micro USB connector (N.B. the data pins are NOT connected - you can only power the board theough this USB port.
    - Via the "ST-Link V2" USB Device  - This technique works fine as long as you are not powering anything else from the development board.
-
-<img src="images/STM8SF3P6_board.jpg" alt="Dev board"/>
-
+   
+   
 
 # Development Board Schematic information
-The Schematic for this board is pictured below and it has the following components:
+
+<img src="images/stm8blue-schematic.jpg" alt="Schematic"/>
+
+The Schematic for this board is pictured above and it has the following components:
  - Micro USB Connector  - used to supply power to the board only
  - Reset button         - Resets the microcontroller 
  - "Poweron" LED        - It is always on when power is applied to the board (annoyingly bright !!)
@@ -30,7 +36,7 @@ The Schematic for this board is pictured below and it has the following componen
  - 4  "Upper" pins      - It is usual to solder these 4 pins upwards. This means that while the development board is plugged into a breadboard, you can easily access these 4 pins for attaching to the "ST-Link V2" USB device. 
 
 
-<img src="images/stm8blue-schematic.jpg" alt="Schematic"/>
+
 
 
 # "ST-LINK V2" device
