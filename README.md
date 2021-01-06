@@ -16,7 +16,7 @@ Please note:
    - Via the "ST-Link V2" USB Device  - This technique works fine as long as you are not powering anything else from the development board.
    
 
-<img src="images/12f675 board.jpg" alt="Dev board"/>
+<img src="images/STM8SF3P6_board.jpg" alt="Dev board"/>
 
 
 # Development Board Schematic information
