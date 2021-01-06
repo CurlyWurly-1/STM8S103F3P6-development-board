@@ -65,6 +65,7 @@ Just a reminder of other things that you could get. A cheap 4 port hub with a de
 You could also buy more than just a breadboard from a well known commerce site beginning with "E" i.e. Look for a complete kit of electronic parts which include lots of useful components as well as a breadboard                                                     
  <img src="images/s-l1600.jpg" alt="Cheap 4 port USB hub"/>
  <img src="images/s-l500.jpg" alt="Breadboard and wires"/>
+ <img src="images/kit.jpg" alt="Electronic component kit"/>
 
 
 
