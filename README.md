@@ -41,7 +41,13 @@ The Schematic for this board is pictured above and it has the following componen
 <img src="images/ST-LinkV2_pinout_01.jpg" alt="ST-Link V2"/>
 
 If you want to program the board as per these examples, you will also need a "ST-LINK V2" USB device like the blue one you see in the picture above - If you haven't already got one, make sure you buy it at the same time as you buy a STM8S103F3P6 Development board.  
+You will be using the following pins (N.B. Annoyingly, the connection sequence varies - check your wiring when you get to the development board - see the first picture above)
 
+ - SWDIO (pin2)    -> SWIM
+ - gnd   (pin4)    -> Gnd
+ - SWCLK (pin6)    -> NRST
+ - 3.3V  (pin8)    -> 3.3V
+ 
 This "ST-LINK V2" device is plugged into a PC's USB port and the 4 wire harness connects to 4 "upper" pins of the development board. Bear in mind that the harness is short, so consider using a cheap 4 port USB hub so that you can position the development board better - Ideally you want the board to be near you so you can easily see it and connect things to it.  Bear in mind that one of the programs is for sending serial data back to the PC. To see this serial data, from the UART pin, you will need a TTL USB dongle and this would use another USB port. 
 
 
@@ -76,8 +82,7 @@ N.B.  Make sure it is switchable and you set it to 3.3V.
 
 # How to set up and install the software and components
 The above info covers this, however, please note the following tips and tricks
- - Remember you have to install the COSMIC compiler, the STVD software and the STVP software
-
+ - Remember you have to install 3 things in your Win10 PC - the COSMIC compiler, the STVD software and the STVP software 
  - Download this "STM8S103" folder and all its contents to a new folder (e.g. call it "C:\ZST_STM8S103")
 
  - Create your workspaces in this folder ("C:\ZST_STM8S103")
