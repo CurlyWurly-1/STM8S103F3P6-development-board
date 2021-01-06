@@ -61,10 +61,11 @@ N.B.  Make sure it is switchable and you set it to 3.3V.
 
 
 # Other useful items - 4 port hub, breadboard, dupont cables and electronic components
-<img src="s-l1600.jpg" alt="Cheap 4 port USB hub"/>
-<img src="s-l1500.jpg" alt="Breadboard adn wires"/>
-Just a reminder of other things that you could get. A cheap 4 port hub with a decently long lead will enable you to have the development board on your desk.
-N.B. You can buy a kit of "electronic" parts from  well know commerce site beginning with "E"
+Just a reminder of other things that you could get. A cheap 4 port hub with a decently long lead will enable you to place the development board in easy reach on your desk.
+You could also buy more than just a breadboard from a well known commerce site beginning with "E" Ideally purchase a kit of electronic parts
+<img src="images/s-l1600.jpg" alt="Cheap 4 port USB hub"/>
+<img src="images/s-l500.jpg" alt="Breadboard and wires"/>
+
 
 
 
