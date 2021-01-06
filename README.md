@@ -30,7 +30,7 @@ The Schematic for this board is pictured below and it has the following componen
  - 4  "Upper" pins      - It is usual to solder these 4 pins upwards. This means that while the development board is plugged into a breadboard, you can easily access these 4 pins for attaching to the "ST-Link V2" USB device. 
 
 
-<img src="images/12f675 schematic.jpg" alt="Schematic"/>
+<img src="images/stm8blue-schematic.jpg" alt="Schematic"/>
 
 
 # "ST-LINK V2" device
