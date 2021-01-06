@@ -2,8 +2,8 @@
 
 *Updating this repo is in progress*
 
-The STM8S103F3P6 is a 20 pin PIC microcontroller development board with 16 GPIO pins. It is a cheap, quite powerful and easily available
 This repository is for collecting "C" programs (COSMIC) that can be used to program the STM8S103F3P6 development board as seen in the picture below (via the STVD IDE)   
+The STM8S103F3P6 is a 20 pin PIC microcontroller development board with 16 GPIO pins. It is cheap, quite powerful and easily available. 
 
 Please note:
  - The following "C" programs are stored in folder "CODE" of this repository  
@@ -38,12 +38,14 @@ If you want to program the board as per these examples, you will also need a "ST
 
 This "ST-LINK V2" device is plugged into a PC's USB port and the 4 wire harness connects to 4 "upper" pins of the development board. Bear in mind that the harness is short, so consider getting a USB extender cable so you are not resticted in where you have to put the development board - Ideally you want it near you so you can easily see it and connect things to it.  
 
-<img src="images/pickit3.jpg" alt="Pickit 3"/>
+<img src="images/ST-LinkV2_pinout_01.jpg" alt="ST-Link V2"/>
 
 
 # How to get familiar with this board
-- There are series of excellent blogs adn tutorials out there. Here are a ferw of them
+- There are series of excellent blogs and tutorials out there. Here are a few of them
 
+  - Generic STM8S103 breakout board
+    - https://tenbaht.github.io/sduino/hardware/stm8blue/
   - STARTING STM8 MICROCONTROLLERS
     - http://embedded-lab.com/blog/starting-stm8-microcontrollers/
   - Getting Started with STM8S using STVD and Cosmic C Compilerck
