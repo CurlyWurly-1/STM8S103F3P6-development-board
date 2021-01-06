@@ -28,12 +28,10 @@ Please note:
 The Schematic for this board is pictured above and it has the following components:
  - Micro USB Connector  - used to supply power to the board only
  - Reset button         - Resets the microcontroller 
- - "Poweron" LED        - It is always on when power is applied to the board (annoyingly bright !!)
- - one LED              - This LED is connected to pin B5 - to light the LED, you need to output a low to sink current
- - ICSP pins            - White housing of 6 pins - used for the programming interface
- - 20 "Lower" pins      - It is usual to solder the 20 header pins below. This means you can plug the development board into a breadboard
- - 4  "Upper" pins      - It is usual to solder these 4 pins upwards. This means that while the development board is plugged into a breadboard, you can easily access these 4 pins for attaching to the "ST-Link V2" USB device. 
-
+ - "Poweron" LED        - This LED is always on when power is applied to the board (annoyingly bright !!)
+ - "Signal" LED         - This LED is connected to pin B5 - to light the LED, you need to output a low to sink current.
+ - 20 "Lower" pins      - It is usual to solder the 20 header pins below the board. This means you can plug the development board into a breadboard
+ - 4  "Upper" pins      - It is usual to solder these 4 pins upwards. This means that while the development board is plugged into a breadboard, you can easily access these 4 pins to attach the "ST-Link V2" USB device. 
 
 
 
