@@ -60,6 +60,12 @@ If you want to test the UART capability of the development board, be aware you w
 N.B.  Make sure it is switchable and you set it to 3.3V.  
 
 
+# Other useful items - 4 port hub, breadboard, dupont cables and electronic components
+<img src="s-l1600.jpg" alt="Cheap 4 port USB hub"/>
+<img src="s-l1500.jpg" alt="Breadboard adn wires"/>
+Just a reminder of other things that you could get. A cheap 4 port hub with a decently long lead will enable you to have the development board on your desk.
+N.B. You can buy a kit of "electronic" parts from  well know commerce site beginning with "E"
+
 
 
 # How to get familiar with this board
