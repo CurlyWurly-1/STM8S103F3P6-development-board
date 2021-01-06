@@ -37,11 +37,22 @@ The Schematic for this board is pictured above and it has the following componen
 
 
 # "ST-LINK V2" device
-If you want to program the board as per these examples, you will also need a "ST-LINK V2" USB device like the one you see in the picture below - If you haven't already got one, make sure you buy it at the same time as you buy the STM8S103F3P6 Development board.  
-
-This "ST-LINK V2" device is plugged into a PC's USB port and the 4 wire harness connects to 4 "upper" pins of the development board. Bear in mind that the harness is short, so consider getting a USB extender cable so you are not resticted in where you have to put the development board - Ideally you want it near you so you can easily see it and connect things to it.  
 
 <img src="images/ST-LinkV2_pinout_01.jpg" alt="ST-Link V2"/>
+
+If you want to program the board as per these examples, you will also need a "ST-LINK V2" USB device like the blue one you see in the picture above - If you haven't already got one, make sure you buy it at the same time as you buy a STM8S103F3P6 Development board.  
+
+This "ST-LINK V2" device is plugged into a PC's USB port and the 4 wire harness connects to 4 "upper" pins of the development board. Bear in mind that the harness is short, so consider using a cheap 4 port USB hub so that you can position the development board better - Ideally you want the board to be near you so you can easily see it and connect things to it.  Bear in mind that one of the programs is for sending serial data back to the PC. To see this serial data, you will also need a TTL USB dongle 
+
+
+# "TTL USB Serial adaptor" device
+
+<img src="images/ch340-usb-to-ttl-serial-adaptor.jpg" alt="USB to TTL serial adaptor"/>
+
+If you want to test the UART capability of the development board, be aware you will need a "USB to TTL" serial adaptor like the one you see above.
+N.B.  Make sure it is switchable and you set it to 3.3V.  
+
+
 
 
 # How to get familiar with this board
