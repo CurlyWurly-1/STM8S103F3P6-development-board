@@ -1,7 +1,8 @@
 # STM8S103F3P6-development-board
 
-The STM8S103F3P6 is a 20 pin PIC microcontroller with 16 GPIO pins. It is a cheap board what it can do and can be easily purchased from well know selling sites, such as those beginning with the letter "E"
+*Updating this repo is in progress*
 
+The STM8S103F3P6 is a 20 pin PIC microcontroller development board with 16 GPIO pins. It is a cheap, quite powerful and easily available
 This repository is for collecting "C" programs (COSMIC) that can be used to program the STM8S103F3P6 development board as seen in the picture below (via the STVD IDE)   
 
 Please note:
@@ -14,7 +15,6 @@ Please note:
  - There are 2 ways to supply regulated 5V to this dev board. 
    - Via the supplied micro USB connector (N.B. the data pins are NOT connected - you can only power the board theough this USB port.
    - Via the "ST-Link V2" USB Device  - This technique works fine as long as you are not powering anything else from the development board.
-   
 
 <img src="images/STM8SF3P6_board.jpg" alt="Dev board"/>
 
