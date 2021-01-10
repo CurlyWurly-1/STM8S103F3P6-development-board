@@ -9,10 +9,11 @@ The STM8S103F3P6 is a 20 pin PIC microcontroller development board with 16 GPIO 
   
 
 Please note:
- - The following "C" programs are stored in folder "CODE" of this repository  
+ - The following "C" programs are stored in folder "CODE/ZST_Workspce_FOLDER" of this repository  
    - STM8S_blink.c  
    - STM8S_uart.c
    - STM8S_adc.c 	 	 
+   - YX5300_MP3_Player
  - When you buy this board, you only get the blue coloured development board as seen in the picture above without the header pins.  _**N.B. You will need to buy some header pins and solder them yourself before you can use the board**_.
  - To program the STM8S103, you also need a "ST-Link V2" USB device which connects to the boards 4 upright pins via a 4 wire dupont harness. See below for more information about this programming/debugging device 
  - If you want to use the UART on the development board and see the data on your PC (Perhaps using termite?), you also need a "USB to TTL" serial adaptor which connects to the board's 3 UART pins (Gnd.TX and RX). See below for more information about this USB to TTL Serial adaptor. 
@@ -89,41 +90,32 @@ You could also buy more than just a breadboard from a well known commerce site b
     - https://maker.pro/custom/tutorial/getting-started-with-stm8-microcontrollers
 
 
-# How to set up and install the software and components
-The above info covers this, however, please note the following tips and tricks
- - Remember you have to install 3 things in your Win10 PC - the COSMIC compiler, the STVD software and the STVP software 
- - Download this "STM8S103" folder and all its contents to a new folder (e.g. call it "C:\ZST_STM8S103")
-
- - Create your workspaces in this folder ("C:\ZST_STM8S103")
-
- - When you have to, set the C compiler to "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8"
-
- - When you have to set a file to be used by the programmer for the "Program memory", set it to the "S19" file from folder "Debug"
-
- - Execute STVD
-  - Set compatability mode for program "C:\Program Files (x86)\STMicroelectronics\st_toolset\stvd\stvdebug.exe" to be "Windows XP SP 3".
-    This is to remove the error that says "no access to file default.wed".
-
-  - Replace C:\Program Files (x86)\STMicroelectronics\st_toolset\stvp\tools.cnf. (N.B. You will find the file in the folder) 
-    This is to stop STVD crashing when you press "programmer" 
-
-  - In your project, highlight folder "SRC" and add both files "stm8s_delay.c" and "stm8s_gpio.c" 
-    These have been separated because they are different for each chip
-
-  - In your project, highlight folder "INC" and add file "stm8s.h"
-    In this file, you will have already uncommented the line sothat it points to "STM8S103" 
-
-  - Highlight the workspace file (e.g. "zst_workspace"), right click and press "Settings" to display the "Settings" window. 
-    Change the following and press "OK" 
-    - Change "Settings for" to "Debug"   (top left) and then select tab "C Compiler" - Change "C language" to default   
-    - Change "Settings for" to "Release" (top left) and then select tab "C Compiler" - Change "C language" to default  
-
 
 # How to Program the STM8S103F3P6 development board
  - Ensure the COSMIC compiler, The STVD IDE and STVP programmer are installed in your PC as per what you have seen in the links above
  - On your PC, 
-   - If you haven't already done so, prepare the folder as downloaded and described in the previous section e.g. a folder called; C:\ZST_WORKSPACE_FOLDER
-   - Execute STVD and open the workspace file  
-   - Highlight which project you want to use by right clikcing and setting as the "active" project 
+   - Download the repository zip file to your PC and unzip it.
+   - In the unzipped folder, Navigate through fodler "CODE" and copy the entire folder called "ZST_Workspace_FOLDER" to your PC e.g. make it "C:\ZST_WORKSPACE_FOLDER"
+   - Execute STVD and open the workspace file called "ZST_Workspace.stw" which you will find in the workspace folder you created above called "C:\ZST_WORKSPACE_FOLDER"
+   - When the above step has finished, you will see the 4 projects that you can use. 
+   - Highlight which project you want to use by right clikcing the project name and setting as the "active" project 
    - Press "Build" -> "Rebuld All" (check that there are no errors)
    - Press the "Programmer" button and after about 4 seconds, a window will be displayed. Press "start" to program your device
+
+
+# Tips and tricks - Things you have to do
+ - In your PC:
+   - Remember you have to download and install 3 things into your Win10 PC - the COSMIC compiler is downloaded from the COSMIC website with the STVD and STVP software downloaded from Microchip. See the above URL links on how to do this 
+
+   - Replace C:\Program Files (x86)\STMicroelectronics\st_toolset\stvp\tools.cnf. (N.B. You will find the file in the folder) 
+    This is to stop STVD crashing when you press "programmer" 
+
+   - Right click the "stvdebug.exe" program in "C:\Program Files (x86)\STMicroelectronics\st_toolset\stvd\" and set the compatability mode to be "Windows XP SP 3".
+   This is to remove the error that says "no access to file default.wed".
+ 
+ - When you are executing STVD in your PC
+   - Highlight the workspace file (e.g. "zst_workspace"), right click and press "Settings" to display the "Settings" window. Change the following and press "OK" 
+    - Change "Settings for" to "Debug"   (top left) and then select tab "C Compiler" - Change "C language" to default   
+    - Change "Settings for" to "Release" (top left) and then select tab "C Compiler" - Change "C language" to default  
+    - When you have to, set the location of the C compiler to the default place where you loaded the COSMIC compiler e.g. "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8"
+    - When you want to program the chip, set the "program memory" file to the appropriate "S19" file which is in folder "Debug"
