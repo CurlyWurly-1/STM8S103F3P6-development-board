@@ -92,12 +92,8 @@ You could also buy more than just a breadboard from a well known commerce site b
 
 
 # How to Program the STM8S103F3P6 development board
- - Ensure the COSMIC compiler, The STVD IDE and STVP programmer are installed in your PC as per what you have seen in the links above
  - On your PC, 
-   - Download the repository zip file to your PC and unzip it.
-   - In the unzipped folder, Navigate through fodler "CODE" and copy the entire folder called "ZST_Workspace_FOLDER" to your PC e.g. make it "C:\ZST_WORKSPACE_FOLDER"
-   - Execute STVD and open the workspace file called "ZST_Workspace.stw" which you will find in the workspace folder you created above called "C:\ZST_WORKSPACE_FOLDER"
-   - When the above step has finished, you will see the 4 projects that you can use. 
+
    - Highlight which project you want to use by right clikcing the project name and setting as the "active" project 
    - Press "Build" -> "Rebuld All" (check that there are no errors)
    - Press the "Programmer" button and after about 4 seconds, a window will be displayed. Press "start" to program your device
@@ -105,8 +101,15 @@ You could also buy more than just a breadboard from a well known commerce site b
 
 # Tips and tricks - Things you have to do
  - In your PC:
-   - Remember you have to download and install 3 things into your Win10 PC - the COSMIC compiler is downloaded from the COSMIC website with the STVD and STVP software downloaded from Microchip. See the above URL links on how to do this 
-
+   - Remember you have to download and install 4 things into your Win10 PC 
+     - The COSMIC compiler is downloaded from the COSMIC website 
+     - The STVD software (IDE) is downloaded from the Microchip website.  
+     - The STVP software (it controls the "ST-Link V2") is downloaded from the Microchip website.  
+     - The repository zip file from here
+       - Download the repository zip file to your PC and unzip it.
+       - In the unzipped folder, Navigate through fodler "CODE" and copy the entire folder called "ZST_Workspace_FOLDER" to your PC e.g. make it "C:\ZST_WORKSPACE_FOLDER"
+       - Execute STVD and open the workspace file called "ZST_Workspace.stw" which you will find in the workspace folder you created above called "C:\ZST_WORKSPACE_FOLDER"
+       - When the above step has finished, you will see the 4 projects that you can use. 
    - Replace C:\Program Files (x86)\STMicroelectronics\st_toolset\stvp\tools.cnf. (N.B. You will find the file in the folder) 
     This is to stop STVD crashing when you press "programmer" 
 
