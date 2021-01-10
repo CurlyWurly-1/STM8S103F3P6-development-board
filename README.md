@@ -7,7 +7,7 @@
 This repository is for collecting "C" programs (COSMIC) that can be used to program the STM8S103F3P6 development board as seen in the picture above.   
 The STM8S103F3P6 is a 20 pin PIC microcontroller development board with 16 GPIO pins. It is cheap, quite powerful and easily available. You can program it in "C" (Cosmic) using an IDE called "STVD" and hex programmer called "STVP" - All of which you can download, install and use on your win10 PC for free. 
 
-N.B. Be aware that whilst this is a 3.3v device, it can be powered via a 5volt micro USB cable.  
+N.B. Be aware that this is a 3.3v device sp it expects 3.3v logic levels. However, the board has a regulator so it can be powered via the 5 volt micro USB cable.  
 
 Please note:
  - The following "C" programs are stored in folder "CODE/ZST_Workspce_FOLDER" of this repository. Please see below on how to load up the programs so you can see them in STVD  
@@ -33,10 +33,8 @@ The Schematic for this board is pictured above and it has the following componen
  - Reset button         - Resets the microcontroller 
  - "Poweron" LED        - This LED is always on when power is applied to the board (annoyingly bright !!)
  - "Signal" LED         - This LED is connected to pin B5 - to light the LED, you need to output a low to sink current.
- - 20 "Lower" pins      - It is usual to solder the 20 header pins below the board. This means you can plug the development board into a breadboard
- - 4  "Upper" pins      - It is usual to solder these 4 pins upwards. This means that while the development board is plugged into a breadboard, you can easily access these 4 pins to attach the "ST-Link V2" USB device. 
-
-
+ - 20 "Lower" pins      - It is usual for the 20 header pins (2 x 10) to be soldered downwards from the bottom of the board. This means you can plug the development board into a breadboard
+ - 4  "Upper" pins      - It is usual for the 4  header pins to be soldered pointing upwards from the top of the board. This allows for easy access to these 4 pins for attaching the "ST-Link V2" USB device, even when the development board is plugged into a breadboard using he 2o header pins below. 
 
 
 # "ST-LINK V2" device
@@ -44,14 +42,14 @@ The Schematic for this board is pictured above and it has the following componen
 <img src="images/ST-LinkV2_pinout_01.jpg" alt="ST-Link V2"/>
 
 If you want to program the board as per these examples, you will also need a "ST-LINK V2" USB device like the blue one you see in the picture above - If you haven't already got one, make sure you buy it at the same time as you buy a STM8S103F3P6 Development board.  
-You will be using the pin connectino listed below. Annoyingly, the connection sequence varies between the ST-LINK V2 and the development board i.e. Make sure you compare the picture above with the first picture at the top, and use the connection matrix below to connect the two together
+You will be using the pin connection listed below. Annoyingly, the connection sequence varies between the ST-LINK V2 and the development board i.e. Make sure you you follow the connection matrix below to connect the two together and check the pictures above.
 
  - SWDIO (pin2)    -> SWIM
  - gnd   (pin4)    -> Gnd
  - SWCLK (pin6)    -> NRST
  - 3.3V  (pin8)    -> 3.3V
  
-This "ST-LINK V2" device is plugged into a PC's USB port and the 4 wire harness connects to 4 "upper" pins of the development board. Bear in mind that the harness is short, so consider using a cheap 4 port USB hub so that you can position the development board better - Ideally you want the board to be near you so you can easily see it and connect things to it.  Bear in mind that one of the programs is for sending serial data back to the PC. To see this serial data, from the UART pin, you will need a TTL USB dongle and this would use another USB port. 
+This "ST-LINK V2" device is plugged directly into a PC's USB port with it's 4 wire harness connecting to the 4 "upper" pins of the development board. Bear in mind that the harness is short, so consider using a cheap 4 port USB hub so you can position the development board better - Ideally you want the board to be near you so you can easily see it and connect things to it.  Bear in mind that one of the programs is for sending serial data back to the PC. To see this serial data, from the UART pin, you will need a TTL USB dongle and this would use another USB port. 
 
 
 # "TTL USB Serial adaptor" device
@@ -93,7 +91,7 @@ You could also buy more than just a breadboard from a well known commerce site b
 
 # Tips and tricks - Things you have to do
  - In your PC:
-   - Remember you have to download and install 4 things into your Win10 PC 
+   - Remember you have to download and install 4 things into your Win10 PC - the URL links and videos above help you to do this
      - The COSMIC compiler is downloaded from the COSMIC website 
      - The STVD software (IDE) is downloaded from the Microchip website.  
      - The STVP software (it controls the "ST-Link V2") is downloaded from the Microchip website.  
@@ -101,7 +99,7 @@ You could also buy more than just a breadboard from a well known commerce site b
        - Download the repository zip file to your PC and unzip it.
        - In the unzipped folder, Navigate through fodler "CODE" and copy the entire folder called "ZST_Workspace_FOLDER" to your PC e.g. make it "C:\ZST_WORKSPACE_FOLDER"
        - Execute STVD and open the workspace file called "C:\ZST_WORKSPACE_FOLDER\ZST_Workspace.stw". When this completes, you will see that the 4 projects are installed. 
-   - Replace C:\Program Files (x86)\STMicroelectronics\st_toolset\stvp\tools.cnf. (N.B. You will find the file in the folder) 
+   - Replace C:\Program Files (x86)\STMicroelectronics\st_toolset\stvp\tools.cnf. (N.B. You will find the file in folder "CONF" of this reposiotry) 
     This is to stop STVD crashing when you press "programmer" 
 
    - Right click the "stvdebug.exe" program in "C:\Program Files (x86)\STMicroelectronics\st_toolset\stvd\" and set the compatability mode to be "Windows XP SP 3".
