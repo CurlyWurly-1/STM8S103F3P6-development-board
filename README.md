@@ -1,7 +1,5 @@
 # STM8S103F3P6-development-board
 
-*Updating this repo is in progress*
-
 <img src="images/STM8SF3P6_board.jpg" alt="Dev board"/>
 
 This repository is for collecting "C" programs (COSMIC) that can be used to program the STM8S103F3P6 development board as seen in the picture above.   
