@@ -33,7 +33,7 @@ The Schematic for this board is pictured above and it has the following componen
  - "Poweron" LED        - This LED is always on when power is applied to the board (annoyingly bright !!)
  - "Signal" LED         - This LED is connected to pin B5 - to light the LED, you need to output a low to sink current.
  - 20 "Lower" pins      - It is usual for the 20 header pins (2 x 10) to be soldered downwards from the bottom of the board. This means you can plug the development board into a breadboard
- - 4  "Upper" pins      - It is usual for the 4  header pins to be soldered pointing upwards from the top of the board. This allows for easy access to these 4 pins for attaching the "ST-Link V2" USB device, even when the development board is plugged into a breadboard using he 2o header pins below. 
+ - 4  "Upper" pins      - It is usual for the 4  header pins to be soldered pointing upwards from the top of the board. This allows for easy access to these 4 pins for attaching the "ST-Link V2" USB device when the development board is plugged into a breadboard.
 
 
 # "ST-LINK V2" device
