@@ -18,6 +18,7 @@ Please note:
  - When you buy this board, you only get the blue coloured development board as seen in the picture above without the header pins.  _**N.B. You will need to buy some header pins and solder them yourself before you can use the board**_.
  - To program the STM8S103, you also need a "ST-Link V2" USB device which connects to the boards via 4 upright pins using a 4 wire dupont harness. See below for more information about this "ST Link V2" device 
  - If you want to use the UART on the development board and see the data on your PC (Perhaps using termite?), you also need a "USB to TTL serial" adaptor which connects to the board's 3 UART pins (Gnd, TX and RX) and your PC via a USB port. See below for more information about this "USB to TTL Serial" adaptor. 
+ - If you want to use the YX5300 MP3 player, you can easily purchase it from a well know buying site beginning with "E". 
  - There are 2 ways to supply regulated 5V to this dev board. 
    - Via the supplied micro USB connector (N.B. the data pins are NOT connected - you can only power the board theough this USB port.
    - Via the "ST-Link V2" USB Device  - This technique works fine as long as you are not powering anything else from the development board.
