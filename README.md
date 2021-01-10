@@ -20,7 +20,7 @@ Please note:
  - If you want to use the UART on the development board and see the data on your PC (Perhaps using termite?), you also need a "USB to TTL serial" adaptor which connects to the board's 3 UART pins (Gnd, TX and RX) and your PC via a USB port. See below for more information about this "USB to TTL Serial" adaptor. 
  - If you want to use the YX5300 MP3 player, you can easily purchase it from a well know buying site beginning with "E". 
  - There are 2 ways to supply power to this dev board. 
-   - Via 5V through the supplied micro USB connector (N.B. the data pins are NOT connected - you can only power the board theough this USB port.
+   - Via 5V through the supplied micro USB connector (N.B. the data pins are NOT connected - you can only power the board through this USB port.
    - Via 3.3V through the "ST-Link V2" USB Device  - This technique works fine as long as you are not powering anything else from the development board. This method means there is no 5v available from the 5V pin 
    
    
