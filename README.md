@@ -128,6 +128,7 @@ You could also buy more than just a breadboard from a well known commerce site b
        - Tick "Erase before programming"
        - Tick "Unlock Device"
      - In tab "Memory Areas""
+       - Select Memory Area "Program Memory"
        - Press "Add" and add a line that points to the locatino of the appropriate "S19" file e.g. in folder "Debug" 
      - Press "Run STVP"    
 
