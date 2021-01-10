@@ -1,0 +1,24 @@
+;	STMicroelectronics Workspace file
+
+[Version]
+Keyword=ST7Workspace-V0.7
+
+[Project0]
+Filename=adc_test.stp
+Dependencies=
+
+[Project1]
+Filename=uart.stp
+Dependencies=
+
+[Project2]
+Filename=blink.stp
+Dependencies=
+
+[Project3]
+Filename=yx5300_mp3_player.stp
+Dependencies=
+[Options]
+ActiveProject=yx5300_mp3_player
+ActiveConfig=Debug
+AddSortedElements=1
