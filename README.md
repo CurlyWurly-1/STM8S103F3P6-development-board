@@ -108,8 +108,8 @@ You could also buy more than just a breadboard from a well known commerce site b
  
  - When you are executing STVD in your PC
    - Highlight the workspace file (e.g. "zst_workspace"), right click and press "Settings" to display the "Settings" window. Change the following and press "OK" 
-     - Change "Settings for" to "Debug"   (top left) and then select tab "C Compiler" - Change "C language" to default   
-     - Change "Settings for" to "Release" (top left) and then select tab "C Compiler" - Change "C language" to default  
+     - Change "Settings for" to "Debug"   (top left) and then select tab "C Compiler" - Change "C language" to "Default"   
+     - Change "Settings for" to "Release" (top left) and then select tab "C Compiler" - Change "C language" to "Default"  
      - When you have to, set the location of the C compiler to the default place where you loaded the COSMIC compiler e.g. "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8"
      - When you want to program the chip, set the "program memory" file to the appropriate "S19" file which is in folder "Debug"
 
@@ -129,6 +129,6 @@ You could also buy more than just a breadboard from a well known commerce site b
        - Tick "Unlock Device"
      - In tab "Memory Areas""
        - Select Memory Area "Program Memory"
-       - Press "Add" and add a line that points to the locatino of the appropriate "S19" file e.g. in folder "Debug" 
+       - Press "Add" and add a line that points to the location of the appropriate "S19" file e.g. in folder "Debug" 
      - Press "Run STVP"    
 
