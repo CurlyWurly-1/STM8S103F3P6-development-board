@@ -90,15 +90,6 @@ You could also buy more than just a breadboard from a well known commerce site b
     - https://maker.pro/custom/tutorial/getting-started-with-stm8-microcontrollers
 
 
-
-# How to Program the STM8S103F3P6 development board
- - On your PC, 
-
-   - Highlight which project you want to use by right clikcing the project name and setting as the "active" project 
-   - Press "Build" -> "Rebuld All" (check that there are no errors)
-   - Press the "Programmer" button and after about 4 seconds, a window will be displayed. Press "start" to program your device
-
-
 # Tips and tricks - Things you have to do
  - In your PC:
    - Remember you have to download and install 4 things into your Win10 PC 
@@ -121,3 +112,22 @@ You could also buy more than just a breadboard from a well known commerce site b
     - Change "Settings for" to "Release" (top left) and then select tab "C Compiler" - Change "C language" to default  
     - When you have to, set the location of the C compiler to the default place where you loaded the COSMIC compiler e.g. "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8"
     - When you want to program the chip, set the "program memory" file to the appropriate "S19" file which is in folder "Debug"
+
+
+
+
+# How to Program the STM8S103F3P6 development board
+ - On your PC execute "stvdebug.exe" and when this IDE is loaded:  
+   - Right click the project you want to use and select "Set as Active Project" 
+   - In the top menu bar, Press "Build" -> "Rebuld All" (check that it completes without errors - the messages are displayed in the bottom message window)
+   - In the top menu bar, Press "Tools" -> "Programmer" and wait for about 4 seconds. A window will be displayed where you need to set up the following
+     - In tab "settings"
+       - "Board"    ST-LINK 
+       - "Ports"    USB
+       - "Programmign Mode"  SWIM
+       - Tick "Erase before programming"
+       - Tick "Unlock Device"
+     - In tab "Memory Areas""
+       - Press "Add" and add a line that points to the locatino of the appropriate "S19" file e.g. in folder "Debug" 
+     - Press "Run STVP"    
+
