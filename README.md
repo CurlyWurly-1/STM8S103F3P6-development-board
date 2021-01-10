@@ -5,18 +5,19 @@
 <img src="images/STM8SF3P6_board.jpg" alt="Dev board"/>
 
 This repository is for collecting "C" programs (COSMIC) that can be used to program the STM8S103F3P6 development board as seen in the picture above.   
-The STM8S103F3P6 is a 20 pin PIC microcontroller development board with 16 GPIO pins. It is cheap, quite powerful and easily available. You can program it in "C" (Cosmic) using an IDE called "STVD" and hex programmer called "STVP" - All of which you can download, install amd use for free on your win10 PC. 
-  
+The STM8S103F3P6 is a 20 pin PIC microcontroller development board with 16 GPIO pins. It is cheap, quite powerful and easily available. You can program it in "C" (Cosmic) using an IDE called "STVD" and hex programmer called "STVP" - All of which you can download, install and use on your win10 PC for free. 
+
+N.B. Be aware that whilst this is a 3.3v device, it can be powered via a 5volt micro USB cable.  
 
 Please note:
- - The following "C" programs are stored in folder "CODE/ZST_Workspce_FOLDER" of this repository  
+ - The following "C" programs are stored in folder "CODE/ZST_Workspce_FOLDER" of this repository. Please see below on how to load up the programs so you can see them in STVD  
    - STM8S_blink.c  
    - STM8S_uart.c
    - STM8S_adc.c 	 	 
    - YX5300_MP3_Player
  - When you buy this board, you only get the blue coloured development board as seen in the picture above without the header pins.  _**N.B. You will need to buy some header pins and solder them yourself before you can use the board**_.
- - To program the STM8S103, you also need a "ST-Link V2" USB device which connects to the boards 4 upright pins via a 4 wire dupont harness. See below for more information about this programming/debugging device 
- - If you want to use the UART on the development board and see the data on your PC (Perhaps using termite?), you also need a "USB to TTL" serial adaptor which connects to the board's 3 UART pins (Gnd.TX and RX). See below for more information about this USB to TTL Serial adaptor. 
+ - To program the STM8S103, you also need a "ST-Link V2" USB device which connects to the boards via 4 upright pins using a 4 wire dupont harness. See below for more information about this "ST Link V2" device 
+ - If you want to use the UART on the development board and see the data on your PC (Perhaps using termite?), you also need a "USB to TTL serial" adaptor which connects to the board's 3 UART pins (Gnd, TX and RX) and your PC via a USB port. See below for more information about this "USB to TTL Serial" adaptor. 
  - There are 2 ways to supply regulated 5V to this dev board. 
    - Via the supplied micro USB connector (N.B. the data pins are NOT connected - you can only power the board theough this USB port.
    - Via the "ST-Link V2" USB Device  - This technique works fine as long as you are not powering anything else from the development board.
