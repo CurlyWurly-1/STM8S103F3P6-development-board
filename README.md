@@ -7,7 +7,7 @@
 This repository is for collecting "C" programs (COSMIC) that can be used to program the STM8S103F3P6 development board as seen in the picture above.   
 The STM8S103F3P6 is a 20 pin PIC microcontroller development board with 16 GPIO pins. It is cheap, quite powerful and easily available. You can program it in "C" (Cosmic) using an IDE called "STVD" and hex programmer called "STVP" - All of which you can download, install and use on your win10 PC for free. 
 
-N.B. Be aware that this is a 3.3v device sp it expects 3.3v logic levels. However, the board has a regulator so it can be powered via the 5 volt micro USB cable.  
+N.B. Be aware that this is a 3.3v device so it woudl expect 3.3v logic levels. However, the board has a voltage regulator to enable it t be powered via the 5 volt micro USB cable.  
 
 Please note:
  - The following "C" programs are stored in folder "CODE/ZST_Workspce_FOLDER" of this repository. Please see below on how to load up the programs so you can see them in STVD  
